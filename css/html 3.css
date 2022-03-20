@@ -11,6 +11,20 @@
     color: #4e545f;
 }
 
+@media only screen and (max-width: 972px) {
+    .flex{ display: none;}
+}
+
+@media screen and (min-width: 900px) {
+    .text {
+        font-size: 80px;
+    }
+}
+.text{
+    font-size: 40px;
+}
+
+
 .image-header{
     margin-top: 10px;
     width:100%;
