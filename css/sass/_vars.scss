@@ -1,0 +1,33 @@
+// Variables
+// Color
+$primary-color: #00B0FF;
+$heading-color: #fff;
+$links-color: $heading-color;
+$links-color-hover: orange;
+$sub-heading-color: #f4f4f4;
+$body-color: #f4f4f4 ;
+
+
+// Fonts
+$body-font: Helvetica,sans-serif;
+
+
+// set Text Color based on background
+@function text-color ($color){
+    @if(lightness($color) > 70){
+        @return black;
+    }
+    @else{
+        @return red;
+    }
+
+}
+
+
+$steps: (1,2,3,4,5);
+
+@each $step in $steps {
+    .my-#{$atep}{
+        margin: #{step*10}px 0;
+    }
+} 
